@@ -1,25 +1,26 @@
-import logo from './logo.svg';
 import './App.css';
 
+import FunctionalComponent from './Componets/FunctionalComponent'
+import ClassComponet from './Componets/ClassComponet'
+import StatetoFunctional from './Componets/StatetoFunctional';
+import StatetoClass from './Componets/StatetoClass';
+import LifecycleMethod from './Componets/LifecycleMethod';
+import StatePropCombined from './Componets/StatePropCombined';
+import UserProfile from './Componets/Props/UserProfile';
+
+
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+  return(
+    <>
+      <FunctionalComponent />
+      < ClassComponet/><br></br><br></br>
+     <UserProfile /> <br></br><br></br>
+      <StatetoFunctional/><br></br><br></br>
+      <StatetoClass/><br></br>
+      <LifecycleMethod/><br></br>
+      <StatePropCombined/>
+    </>
+  )
 }
 
 export default App;
